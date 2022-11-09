@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         var toogle: ActionBarDrawerToggle=ActionBarDrawerToggle(this,drawer,toolbar,
         R.string.navigation_drawer_open,R.string.navigation_drawer_close)
 
+        //add a toogle listener
         drawer.addDrawerListener(toogle)
         toogle.syncState()
 
