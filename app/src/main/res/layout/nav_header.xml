@@ -6,7 +6,7 @@
     android:background="@color/teal_200"
     android:gravity="bottom"
     android:padding="16dp"
-    android:theme="@style/AppTheme.NoActionBar">
+    android:theme="@style/CustomTheme">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
