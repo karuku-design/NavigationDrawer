@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         //find the drawer layout
         drawer=findViewById(R.id.drawerLyt)
 
+        //toogle the navDrawer using a hamburger icon.
         var toogle: ActionBarDrawerToggle=ActionBarDrawerToggle(this,drawer,toolbar,
         R.string.navigation_drawer_open,R.string.navigation_drawer_close)
 
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
 
         if (drawer.isDrawerOpen(GravityCompat.START)){
-            drawer.openDrawer(GravityCompat.START)
+            drawer.closeDrawer(GravityCompat.START)
         }else{
             super.onBackPressed()
         }
