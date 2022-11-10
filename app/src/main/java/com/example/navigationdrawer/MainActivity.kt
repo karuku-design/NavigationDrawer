@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() ,NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
         when (item.itemId){
             R.id.nav_message->getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container
             , messageFragment()).commit()
